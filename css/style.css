@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #0d47a1;
+    display: inline-block;
+}
+.header h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+
+}
+.main .over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(27, 28, 35, 0.75);
+    width: 100%;
+   height: 100vh;
+}
+.main .over .container{
+    padding-top: 40px;
+}
+.main .over .container .card{
+    background: none;
+    color: #fff;
+    max-width: 400px;
+    margin: auto;
+    border: none;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: #0d47a1;
+    color: #fff;
+    display: inline-block;
+}
+footer p{
+   text-align: center;
+   padding-top: 10px;
+}
+@media (max-width:750px) {
+    .main .over .container .card{
+        margin-bottom: 30px;
+    }
+}
+/*index page ends*/
+
+/*result page starts */
+.result{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    display: inline-block;
+}
+.result .result-container{
+    background: #fff;
+    padding: 30px 0px;
+
+    margin: auto;
+}
+.result .result-container h2{
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+}
+.result .result-container .row .col-4 img{
+    width: 100%;
+    height: 134px;
+    object-fit: contain;
+}
+.result .result-container .row .col-4 h4{
+    text-align: center;
+    font-size: 18px;
+}
+.result .result-container .row .col-4 h4:first-child{
+    margin-top: 15px;
+}
+.result .result-container .second{
+    margin-top: 12px;
+}
+.result .result-container .second .col-6 h5{
+    font-size: 17px;
+    padding-left: 85px;
+}
+.result .result-container .third{
+    margin: auto;
+    margin-top: 20px;
+}
+.download{
+    position: fixed;
+    top: 300px;
+    right: 0;
+
+}
+.download .btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    border: none;
+}
+@media(max-width:800px){
+
+    .result .result-container .row .col-4 h4{
+        font-size: 15px;
+    }
+    .result .result-container .second .col-6 h5{
+        font-size: 14px;
+        padding-left: 0px;
+    }
+    .result .result-container .second .col-6:last-child h5{
+        text-align: right;
+    }
+
+}
